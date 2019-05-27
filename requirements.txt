@@ -1,0 +1,17 @@
+easydict==1.7
+graphviz==0.8.4
+gym==0.10.5
+matplotlib==2.2.2
+numpy==1.15.0
+Pillow==5.2.0
+scikit-learn==0.19.2
+scipy==1.1.0
+tensorboardX==1.2
+tqdm==4.23.4
+pyphen==0.9.5
+torchtext==0.3.1
+spacy==2.0.18
+#Check torch website for instalation instructions
+#torch==0.4.0
+#torchvision==0.2.1
+#torchtext==0.3.1

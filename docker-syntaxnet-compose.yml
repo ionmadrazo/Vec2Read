@@ -1,0 +1,21 @@
+version: "3"
+services:
+  web:
+    # replace username/repo:tag with your name and image details
+    image: andersrye/parsey-universal-server
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          memory: 5G
+      restart_policy:
+        condition: any
+    ports:
+      - "7777:80"
+    networks:
+      - syntaxnetStack
+networks:
+  syntaxnetStack:
+#Run as single instance:
+#sudo docker run --runtime=nvidia -d -it -p 7777:80 -e PARSEY_MODELS=English -e PARSEY_BATCH_SIZE=100 --name=syntaxnet --restart unless-stopped andersrye/parsey-universal-server
+#sudo docker run --runtime=nvidia -d -it -p 7777:80 -e PARSEY_MODELS=English -e PARSEY_BATCH_SIZE=100 --memory=2G --name=syntaxnet --restart unless-stopped andersrye/parsey-universal-server

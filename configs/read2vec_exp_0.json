@@ -1,0 +1,41 @@
+{
+  "exp_name": "read2vec_exp_0",
+  "data_loader": "SingleLanguageDataLoader",
+  "agent": "Read2VecAgent",
+
+  "model": "Read2VecWordAttention",
+  "###model": "BaselineTwoFCLayers",
+  "mode": "train",
+
+  "random_seed": 943,
+  "split_ratio":0.8,
+  "batch_size": 2,
+
+  "learning_rate": 1e-2,
+
+  "max_epoch": 10,
+
+  "validate_every": 10,
+
+  "checkpoint_file": "checkpoint.pth.tar",
+
+
+  "data_loader_workers": 2,
+  "pin_memory": true,
+  "async_loading": true,
+  "lang": "en",
+  "data_split_mode": "random",
+  "classes": ["easy","hard"],
+  "data_folders": {"easy":"data/readabilityCorpora/6lang/VikipediaVsWikipediaCorpus_raw_unbalanced/raw/vikidia/en/",
+                   "hard":"data/readabilityCorpora/6lang/VikipediaVsWikipediaCorpus_raw_unbalanced/raw/wikipedia/en/"},
+  "max_number_of_files_per_category": 10,
+  "use_pretrained_embeddings": true,
+  "embedding_dim": 300,
+  "embedding_folder":"data/embeddings/",
+  "embedding_file":"wiki.en.vec",
+  "finetune_embeddings": true,
+
+  "layer1_size": 10,
+
+  "loss": "CrossEntropyLoss"
+}

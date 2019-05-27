@@ -1,0 +1,54 @@
+{
+  "exp_name": "read2vec_wikiviki_en_exp_1",
+  "data_loader": "SingleLanguageSyntaxnetDataLoader",
+  "agent": "Read2VecAgent",
+
+  "model": "Read2VecMultiAttention",
+  "###model": "BaselineTwoFCLayers",
+  "mode": "train",
+
+  "random_seed": 9430,
+  "split_ratio":0.8,
+  "batch_size": 32,
+
+  "learning_rate": 1e-2,
+
+  "max_epoch": 1000,
+
+  "validate_every": 5,
+
+  "checkpoint_file": "checkpoint.pth.tar",
+
+
+  "data_loader_workers": 2,
+  "pin_memory": true,
+  "async_loading": true,
+  "lang": "en",
+  "data_split_mode": "random",
+  "classes": ["easy","hard"],
+  "data_folders": {"easy":"data/readabilityCorpora/6lang/VikidiaVsWikipedia6LangAndParallel/syntaxnet/vikidia/en/",
+                   "hard":"data/readabilityCorpora/6lang/VikidiaVsWikipedia6LangAndParallel/syntaxnet/wikipedia/en/"},
+  "max_number_of_files_per_category": -1,
+  "use_pretrained_embeddings": true,
+
+  "embedding_folder":"data/embeddings/",
+  "embedding_file":"wiki.en.vec",
+
+  "embedding_dim": 300,
+  "embeddingPOS_dim": 16,
+  "embeddingMorph_dim": 16,
+
+  "hidden_size":32,
+  "attention2hidden_size": {"wordW":32,"synW":32,"morphW":32,"wordS":32,"synS":32,"morphS":32},
+  "attention2input_size": {"wordW":300,"synW":16,"morphW":16,"wordS":64,"synS":64,"morphS":64},
+
+  "#attention2hidden_size": {"wordW":8,"synW":8,"morphW":8,"wordS":8},
+  "#attention2input_size": {"wordW":300,"synW":16,"morphW":16,"wordS":16},
+
+  "#attention2hidden_size": {"wordW":8,"synW":8,"morphW":8,"wordS":8,"synS":8,"morphS":8},
+  "#attention2input_size": {"wordW":300,"synW":16,"morphW":16,"wordS":16,"synS":16,"morphS":16},
+
+  "finetune_embeddings": true,
+  "layer1_size": 128,
+  "loss": "CrossEntropyLoss"
+}
