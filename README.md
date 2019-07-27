@@ -1,6 +1,6 @@
 # Read2vec: Multilingual Readability Assessment
 
-Read2vec is an automatic multilingual readability assessment tool developed in pytorch. This is the result of a research collaboration between [Ion Madrazo Azpiazu](https://ionmadrazo.github.io/) and [Maria Soledad Pera](https://solepera.github.io/). The orginal paper for this project published in Transactions of the Association for Computational Linguistics can be seen [here] (https://www.mitpressjournals.org/doi/full/10.1162/tacl_a_00278).
+Read2vec is an automatic multilingual readability assessment tool developed in pytorch. This is the result of a research collaboration between [Ion Madrazo Azpiazu](https://ionmadrazo.github.io/) and [Maria Soledad Pera](https://solepera.github.io/). The orginal paper for this project published in Transactions of the Association for Computational Linguistics can be seen [here](https://www.mitpressjournals.org/doi/full/10.1162/tacl_a_00278).
 
 Please cite this work as follows:
 
