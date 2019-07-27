@@ -5,17 +5,17 @@ Read2vec is an automatic multilingual readability assessment tool developed in p
 Please cite this work as follows:
 
 ```
-    @article{doi:10.1162/tacl\_a\_00278,
-author = {Madrazo Azpiazu, Ion and Pera, Maria Soledad},
-title = {Multiattentive Recurrent Neural Network Architecture for Multilingual Readability Assessment},
-journal = {Transactions of the Association for Computational Linguistics},
-volume = {7},
-number = {},
-pages = {421-436},
-year = {2019},
-doi = {10.1162/tacl\_a\_00278},
-URL = {https://doi.org/10.1162/tacl_a_00278},
-eprint = {https://doi.org/10.1162/tacl_a_00278}
+@article{madrazo2019,
+    author = {Madrazo Azpiazu, Ion and Pera, Maria Soledad},
+    title = {Multiattentive Recurrent Neural Network Architecture for Multilingual Readability Assessment},
+    journal = {Transactions of the Association for Computational Linguistics},
+    volume = {7},
+    number = {},
+    pages = {421-436},
+    year = {2019},
+    doi = {10.1162/tacl\_a\_00278},
+    URL = {https://doi.org/10.1162/tacl_a_00278},
+    eprint = {https://doi.org/10.1162/tacl_a_00278}
 }
 
 ```
