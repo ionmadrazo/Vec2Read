@@ -1,6 +1,6 @@
-# Read2vec: Multilingual Readability Assessment
+# Vec2Read: Multilingual Readability Assessment
 
-Read2vec is an automatic multilingual readability assessment tool developed in pytorch. This is the result of a research collaboration between [Ion Madrazo Azpiazu](https://ionmadrazo.github.io/) and [Maria Soledad Pera](https://solepera.github.io/). The orginal paper for this project published in Transactions of the Association for Computational Linguistics can be seen [here](https://www.mitpressjournals.org/doi/full/10.1162/tacl_a_00278).
+Vec2Read is an automatic multilingual readability assessment tool developed in pytorch. This is the result of a research collaboration between [Ion Madrazo Azpiazu](https://ionmadrazo.github.io/) and [Maria Soledad Pera](https://solepera.github.io/). The orginal paper for this project published in Transactions of the Association for Computational Linguistics can be seen [here](https://www.mitpressjournals.org/doi/full/10.1162/tacl_a_00278).
 
 Please cite this work as follows:
 
@@ -22,7 +22,7 @@ Please cite this work as follows:
 ## Abstract
 We present a hierarchical recurrent neural network architecture for automatic multilingual readability assessment. This architecture considers raw words as main input, but internally captures text structure and informs its word attention process using other syntax- and morphology-related datapoints, known to be of great importance to readability. This is achieved by a novel multiattentive strategy that allows the neural network to focus on specific parts of a text for predicting its readability level. We conducted exhaustive evaluation using datasets targeting multiple languages and prediction task types, to compare the proposed model with several baseline strategies.
 
-![alt text](https://github.com/ionmadrazo/Read2Vec-pytorch/blob/master/architecture.png)
+![alt text](https://github.com/ionmadrazo/Vec2Read/blob/master/architecture.png)
 
 
 ## Requirements
@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ```
 
 ## Training your own model
-In order to train a model using Read2vec you need to follow the steps below:
+In order to train a model using Vec2Read you need to follow the steps below:
 
 ### Decide on a data loader
 You can find different data loaders under **datasets** directory. The recommeded one is SingleLanguageSyntaxnetDataLoader which loads a dataset parsed by syntaxnet. You can find an example of how to use syntaxnet to parse documents in **notebooks/ParseDocumentsWithSyntaxnet.ipynb**. The data loader expects each text to be in a separate file and in json format. In addition, all documents for an specific class need to be in a single directory.
